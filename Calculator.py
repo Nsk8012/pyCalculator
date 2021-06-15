@@ -4,6 +4,9 @@ from tkinter import *
 window = Tk()
 window.title("Calculator")
 
+#Adding icon to the application
+window.call('wm', 'iconphoto', window._w, PhotoImage(file="/Users/Nsk/Desktop/Project/Calculator/calculator.png"))
+
 #Enter tab
 entry = Entry(window, width=15, bd=5)
 entry.grid(row=0,column=0,columnspan=2)
